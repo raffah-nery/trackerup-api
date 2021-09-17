@@ -98,7 +98,7 @@ class Categories
         }
         else
         {
-            throw new \Exception("Falha ao alterar a categoria!");
+            throw new \Exception("Falha ao deletar a categoria!");
         }
     }
 }
