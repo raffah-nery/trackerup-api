@@ -66,7 +66,7 @@ class Categories
     {
         $connPdo = new \PDO(DBDRIVE . ': host=' . DBHOST . '; dbname=' . DBNAME, DBUSER, DBPASS);
 
-        $sql = 'UPDATE ' . self::$table . ' SET name=:name, description=:description WHERE id = :id';
+        $sql = 'UPDATE ' . self::$table . ' SET name=:name, description=:description WHERE id=:id';
         $stmt = $connPdo->prepare($sql);
         $stmt->bindValue(':name', strtolower($data['name']));
         $stmt->bindValue(':description', $data['description']);
